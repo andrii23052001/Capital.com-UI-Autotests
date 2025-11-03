@@ -26,6 +26,7 @@ public class RegionalSettingsPage extends BasePage {
     }
 
     public RegionalSettingsPage chooseEnglishLocal() {
+        visibilityOfElement(englishLocalButton);
         clickOfElementWithWaiter(englishLocalButton);
         return this;
     }
