@@ -6,13 +6,13 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 
 public class RegionalSettingsPage extends BasePage {
-    @FindBy(xpath = "//div[@data-testid=\"country_switcher_lng\"]")
+    @FindBy(xpath = "//div[@data-type=\"country_switcher_lng\"]")
     private WebElement switchLanguageField;
     @FindBy(xpath = "//button[@data-type=\"nav_country_english\"]")
     private WebElement englishLocalButton;
-    @FindBy(xpath = "//button[@data-testid='country_switcher_apply']")
+    @FindBy(xpath = "//button[@class=\"qBgk W8Vm Q6Im mdPd js-analyticsClick\"='country_switcher_cancel']")
     private WebElement applyButton;
-    @FindBy(xpath = "//div[@data-testid=\"country_switcher_ctry\"]")
+    @FindBy(xpath = "//div[@data-type=\"country_switcher_ctry\"]")
     private WebElement changeCountryField;
     @FindBy(xpath = "//button[text()=\"Stay on this site\"]")
     private WebElement stayOnSiteButton;
